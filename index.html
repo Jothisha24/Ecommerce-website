@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+     
+        .book button.remove {
+            background-color: #FF4C4C; 
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            align-self: center; 
+        }
+
+        .book button.remove:hover {
+            background-color: #ff6666; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Bookstore</h1>
+        <div class="search-container">
+            <input type="text" id="search-box" placeholder="Search for a book..." oninput="searchBooks()">
+        </div>
+    </header>
+
+    <main>
+        <section class="featured-books" id="featured">
+            <h2>Featured Books</h2>
+            <div class="book-list" id="book-list"></div>
+        </section>
+
+        <section class="cart" id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <p id="total-price">Total: $0</p>
+            <button id="checkout-button">Proceed to Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Bookstore. All rights reserved.</p>
+        <p>Contact us: info@onlinebookstore.com</p>
+    </footer>
+
+    <!-- Link to  JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
